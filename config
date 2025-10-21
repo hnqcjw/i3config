@@ -53,6 +53,8 @@ bindsym $mod+b exec thorium-browser
 # start the screenshooter
 bindsym $mod+Shift+s exec xfce4-screenshooter
 
+# start rofi (appfinder)
+bindsym $mod+Shift+f exec "rofi -show combi"
 # special chars
 bindsym $mod+Shift+x exec gucharmap
 # kill focused window
