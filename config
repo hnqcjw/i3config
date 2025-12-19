@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -45,20 +45,20 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+z exec i3-sensible-terminal
 
 # start the browser
-bindsym $mod+b exec thorium-browser
+bindsym $mod+b exec qutebrowser 
 
 # start the screenshooter
 bindsym $mod+Shift+s exec xfce4-screenshooter
 
 # start rofi (appfinder)
-bindsym $mod+Shift+f exec "rofi -show combi"
+bindsym $mod+space exec "rofi -show combi"
 # special chars
 bindsym $mod+Shift+x exec gucharmap
 # kill focused window
-bindsym $mod+F4 kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-10'"
@@ -110,7 +110,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+x focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
